@@ -1,0 +1,19 @@
+website
+-
+website_id int PK
+website VARCHAR(50)
+last_updated TIMESTAMP
+manufacturer
+-
+manufacturer_id int PK
+manufacturer VARCHAR(50)
+last_updated TIMESTAMP
+diapers
+-
+diaper_id serial PK
+title VARCHAR(200)
+price decimal
+reviews decimal
+website_id FK >- website.website_id
+manufacturer_id FK >- manufacturer.manufacturer_id
+last_updated TIMESTAMP
